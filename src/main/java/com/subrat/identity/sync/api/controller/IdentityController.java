@@ -1,4 +1,4 @@
-package com.subrat.identity.sync.api;
+package com.subrat.identity.sync.api.controller;
 
 import com.subrat.identity.sync.api.dto.UserRequest;
 import com.subrat.identity.sync.domain.event.EventType;

@@ -1,4 +1,4 @@
-package com.subrat.identity.sync.consumer;
+package com.subrat.identity.sync.messaging.consumer;
 
 import com.subrat.identity.sync.domain.event.UserEvent;
 import com.subrat.identity.sync.service.IdentityProcessingService;

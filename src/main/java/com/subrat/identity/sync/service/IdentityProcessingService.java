@@ -1,7 +1,7 @@
 package com.subrat.identity.sync.service;
 
 import com.subrat.identity.sync.domain.event.UserEvent;
-import com.subrat.identity.sync.entity.ProcessedEvent;
+import com.subrat.identity.sync.domain.model.ProcessedEvent;
 import com.subrat.identity.sync.repository.ProcessedEventRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

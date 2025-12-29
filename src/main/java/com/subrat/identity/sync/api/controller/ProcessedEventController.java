@@ -1,6 +1,6 @@
-package com.subrat.identity.sync.api;
+package com.subrat.identity.sync.api.controller;
 
-import com.subrat.identity.sync.entity.ProcessedEvent;
+import com.subrat.identity.sync.domain.model.ProcessedEvent;
 import com.subrat.identity.sync.repository.ProcessedEventRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.subrat.identity.sync.entity;
+package com.subrat.identity.sync.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
