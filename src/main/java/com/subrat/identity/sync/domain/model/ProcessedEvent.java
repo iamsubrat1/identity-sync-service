@@ -1,9 +1,6 @@
 package com.subrat.identity.sync.domain.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 
 import java.time.Instant;
@@ -16,8 +13,13 @@ public class ProcessedEvent {
     @Column(nullable = false, updatable = false)
     private String eventId;
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private String eventType;
+
     private String userId;
+
+    @Column(nullable = false)
     private Instant processedAt;
 
     protected ProcessedEvent() {
