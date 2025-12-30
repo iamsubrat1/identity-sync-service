@@ -1,5 +1,6 @@
 package com.subrat.identity.sync.domain.model;
 
+import com.subrat.identity.sync.domain.event.EventType;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -15,7 +16,7 @@ public class ProcessedEvent {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String eventType;
+    private EventType eventType;
 
     private String userId;
 
@@ -25,7 +26,7 @@ public class ProcessedEvent {
     protected ProcessedEvent() {
     }
 
-    public ProcessedEvent(String eventId, String eventType, String userId) {
+    public ProcessedEvent(String eventId, EventType eventType, String userId) {
         this.eventId = eventId;
         this.eventType = eventType;
         this.userId = userId;
